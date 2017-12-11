@@ -20,7 +20,6 @@ public class DBOutputWritable implements DBWritable{
 		this.starting_phrase = arg0.getString(1);
 		this.following_word = arg0.getString(2);
 		this.count = arg0.getInt(3);
-		//how to read fields?
 		
 	}
 
@@ -28,7 +27,6 @@ public class DBOutputWritable implements DBWritable{
 		arg0.setString(1, starting_phrase);
 		arg0.setString(2, following_word);
 		arg0.setInt(3,count);
-		//how to write fields?
 		
 	}
 

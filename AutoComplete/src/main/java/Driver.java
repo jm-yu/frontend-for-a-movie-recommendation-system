@@ -20,7 +20,7 @@ public class Driver {
 		//conf1.set("textinputformat.record.delimiter", ".");
 		DBConfiguration.configureDB(conf1,
 				"com.mysql.jdbc.Driver",
-				"jdbc:mysql://localhost:8889/movie",
+				"jdbc:mysql://192.168.0.106:8889/mrsys_database",
 				"root",
 				"root");
 
@@ -37,7 +37,7 @@ public class Driver {
 		job1.setInputFormatClass(TextInputFormat.class);
 		job1.setOutputFormatClass(DBOutputFormat.class);
 
-		DBOutputFormat.setOutput(job1, "autocomplete_table", new String[] {"starting_phrase", "following_word", "count"});
+		DBOutputFormat.setOutput(job1, "autocomplete_table", new String[] {"prefix", "movie_name", "count"});
 		TextInputFormat.setInputPaths(job1, new Path(args[0]));
 		job1.waitForCompletion(true);
 

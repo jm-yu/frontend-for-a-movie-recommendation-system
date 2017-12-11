@@ -26,11 +26,17 @@ public class NGramLibraryBuilder {
 			line = line.trim().toLowerCase();
 
 			String[] strs = line.split(",");
-			//how to build n-gram based on array of words?
-			String movie_name = strs[1];
-			//context.write(new Text(movie_name.substring(0,2)), new Text(movie_name));
+            String movie_name = strs[1];
+            int str_idx = 2;
+            while (str_idx < strs.length - 1){
+            	movie_name = movie_name + "," + strs[str_idx];
+            	str_idx++;
+			}
+            if (movie_name.charAt(0) == '"'){
+                movie_name = movie_name.substring(1);
+            }
 			int start = Math.min(1, movie_name.length() - 1);
-			int end = Math.min(9, movie_name.length() - 1);
+			int end = Math.min(25, movie_name.length() - 1);
 			for(int i = start; i < end; i++){
 			    String starting_phrase = movie_name.substring(0,i);
 				context.write(new Text(starting_phrase), new Text(movie_name));
