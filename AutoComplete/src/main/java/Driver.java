@@ -20,7 +20,7 @@ public class Driver {
 		//conf1.set("textinputformat.record.delimiter", ".");
 		DBConfiguration.configureDB(conf1,
 				"com.mysql.jdbc.Driver",
-				"jdbc:mysql://192.168.0.106:8889/mrsys_database",
+				"jdbc:mysql://192.168.1.101:8889/mrsys_database",
 				"root",
 				"root");
 

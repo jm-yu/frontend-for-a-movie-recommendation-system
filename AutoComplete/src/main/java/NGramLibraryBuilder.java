@@ -33,7 +33,7 @@ public class NGramLibraryBuilder {
             	str_idx++;
 			}
             if (movie_name.charAt(0) == '"'){
-                movie_name = movie_name.substring(1);
+                movie_name = movie_name.substring(1, movie_name.length() - 1);
             }
 			int start = Math.min(1, movie_name.length() - 1);
 			int end = Math.min(25, movie_name.length() - 1);
