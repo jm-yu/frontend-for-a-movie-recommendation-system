@@ -20,6 +20,9 @@ where:
   ssh -i [PATH_TO_PRIVATE_KEY] [yourUserName@external_ip]
 
 
+12.31
+  http://35.196.58.1/index.php
+
 
 reference:
   W3school.com
