@@ -10,7 +10,7 @@ $(document).ready(function(){
 	//alert(list_id);
 		if (keyword.length >= min_length) {
 			$.ajax({
-				url: 'autocomplete.php',
+				url: 'ajax_refresh.php',
 				type: 'POST',
 				data: {keyword:keyword, movie_id:movie_id},
 				success:function(data){
