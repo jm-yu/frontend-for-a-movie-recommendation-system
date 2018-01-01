@@ -22,9 +22,6 @@
 <span align="right">
 <button class = "button1" onclick="document.getElementById('id02').style.display='block'">Sign up</button>
 </span>
-<span align="right">
-<button class = "button1" onclick="location.href='user_input.php'">Login as one-time user</button>
-</span>
 <!-- The Modal -->
 <div id="id01" class="modal">
   <span onclick="document.getElementById('id01').style.display='none'" 
