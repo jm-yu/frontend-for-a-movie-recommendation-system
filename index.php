@@ -1,7 +1,7 @@
 <?php
     session_start();
     if (isset($_SESSION['username'])) {
-        header("./index.html");
+        header("./index.php");
    }
 ?>
 <!DOCTYPE html>
@@ -69,7 +69,7 @@ class="close" title="Close Modal">&times;</span>
 
       <label><b>Email</b></label>
       <input id = "s_email" type="text" placeholder="email" name="s_email" required>
-      <p>By creating an account you agree to our <a href="./terms.txt">Terms & Privacy</a>.</p>
+      <p>By creating an account you agree to our <a href="./terms.html">Terms & Privacy</a>.</p>
       <div id="message_2"></div>
       <div class="clearfix">
         <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
