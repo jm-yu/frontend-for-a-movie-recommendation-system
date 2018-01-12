@@ -12,7 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/login_script.js"></script>
 </head>
-<body background-image="https://giphy.com/gifs/VxbP9tLeKzazm/html5">
+<body>
 <!-- Button to open the modal login form -->
 <h1 align="center">Recommend Movie for You!</h2>
 <div class = "main_container">
