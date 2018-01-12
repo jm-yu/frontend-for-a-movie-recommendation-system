@@ -21,7 +21,17 @@ button {
 button:hover {
     opacity: 0.8;
 }
+body{
+    background-image: url('https://media.giphy.com/media/VxbP9tLeKzazm/giphy.gif');
+    background-size: cover;
+}
 
+.main_container {
+    opacity: 1.0;
+    background-color: rgba(255,255,255,0.0);
+    width: 90%;
+    margin: 25px;
+}
 
 /* Center the image and position the close button */
 .imgcontainer {
@@ -30,9 +40,32 @@ button:hover {
     position: relative;
 }
 
+.button_container{
+    background-color: rgba(255,255,255,0.0);
+    padding: 5%;
+    width: 20%;
+    align-items: center;
+}
 
 .container {
     padding: 16px;
+}
+span.left{
+    background: rgba(255,255,255,0.0)
+    opacity: 1.0;
+    display: inline-block;
+    width: 80%; 
+    padding: 5%
+}
+span.middle{
+    display: inline-block;
+    width: 80%; 
+    padding: 5%
+}
+span.right{
+    display: inline-block;
+    width: 80%; 
+    padding: 5%
 }
 
 span.psw {
@@ -94,8 +127,9 @@ input[type=text], input[type=password] {
 
 /* Set a style for all buttons */
 .button1 {
-    background-color: #4CAF50;
+    background-color: rgba(255,255,255,0.0);
     color: white;
+    font-size: 20px;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
