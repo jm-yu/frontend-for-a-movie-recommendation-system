@@ -66,7 +66,7 @@ catch(PDOException $e){
 
 fclose($myfile);
 
-$commend = "cd /Applications/MAMP/htdocs/movie_reorganized/neural_collaborative_filtering-master && /Library/Frameworks/Python.framework/Versions/2.7/bin/python NeuMF_latest.py --mode predict --dataset ml-1m --epochs 20 --batch_size 256 --num_factors 8 --layers [64,32,16,8] --reg_mf 0 --reg_layers [0,0,0,0] --num_neg 4 --lr 0.001 --learner adam --verbose 1 --out 1 && cd /Applications/MAMP/htdocs/movie_reorganized/";
+$commend = "cd /var/www/html/neural_collaborative_filtering-master && python NeuMF_latest.py --mode predict --dataset ml-1m --epochs 20 --batch_size 256 --num_factors 8 --layers [64,32,16,8] --reg_mf 0 --reg_layers [0,0,0,0] --num_neg 4 --lr 0.001 --learner adam --verbose 1 --out 1 && cd /var/www/html/";
 exec($commend);
 //$commend = "cd /Applications/MAMP/htdocs/movie_reorganized/neural_collaborative_filtering-master && python te.py";
 //echo $commend;
