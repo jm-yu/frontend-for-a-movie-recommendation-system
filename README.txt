@@ -3,7 +3,7 @@ This a frontend webpage for a movie recommendation project. It includes a login 
 html + css + JQuery + php + mysql
 
 url:
-  http://35.196.58.1/
+  http://35.196.58.1/mov-rec/
 
 reference:
   W3school.com
